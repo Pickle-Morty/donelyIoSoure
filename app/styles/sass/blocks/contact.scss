@@ -1,0 +1,130 @@
+.contact {
+
+    background: linear-gradient(90.56deg, #4A5DEA 0.46%, #914AFF 99.54%);;
+    
+    color: white;
+    
+    .container {
+        position: relative;
+        padding: 65px 20px 44px;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700px;
+        line-height: 54px;
+        display: block;
+        max-width: 730px;
+        margin: 0 auto 74px;
+        text-align: center;
+    }
+
+    img {
+        position: absolute;
+    }
+
+    &__img-1 {
+        bottom: 38px;
+        left: 306px;
+    }
+
+    &__img-2 {
+        top: 65px;
+        left: 44px;
+    }
+
+    &__img-3 {
+        bottom: 42px;
+        left: 1px;
+    }
+
+    &__img-4 {
+        bottom: 30px;
+        right: 48px;
+    }
+
+    &__img-5 {
+        bottom: 45px;
+        right: 420px;
+    }
+
+    &__img-6 {
+        top:47px;
+        left: 189px ;
+    }
+    &__img-7 {
+        bottom: 102px;
+        left: 124px;
+    }
+    &__img-8 {
+        bottom: 67px;
+        right: 241px ;
+    }
+    &__img-9 {
+        top:53px;
+        right: 127px;
+    }
+
+    .btn__white {
+        margin: 0 auto 0;
+
+        img {
+            position: static;
+        }
+    }
+}
+
+@media(max-width:1250px) {
+    .contact {
+        &__img-6 {
+            display: none;
+        }
+        &__img-5 {
+            display: none;
+        }
+    }
+}
+
+@media(max-width:990px) {
+    .contact {
+        &__img-1 {
+            display: none;
+        }
+        &__img-2 {
+            display: none;
+        }
+        &__img-8 {
+            display: none;
+        }
+        &__img-9 {
+            top: 150px;
+            right: 167px;
+        }
+        &__img-4 {
+            bottom: 30px;
+            right: 48px;
+        }
+    }
+    
+} 
+
+@media(max-width:720px) {
+    .contact {
+        &__img-9 {
+            display: none;
+        }
+        &__img-4 {
+            display: none;
+        }
+        &__img-7 {
+            display: none;
+        }
+        &__img-3 {
+            display: none;
+        }
+        &__title {
+            font-size: 28px;
+            font-weight: 700px;
+           
+        }
+    }
+}

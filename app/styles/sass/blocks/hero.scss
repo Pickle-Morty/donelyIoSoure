@@ -1,0 +1,123 @@
+.hero {
+    height: calc(100vh - 130px);
+    display: flex;//flex
+    &__wrapper-text {
+        max-width: 800px;
+        display: flex;
+        padding-right: 47px;
+        flex-direction: column;
+        justify-content: center;
+        .btn__purple {
+            width: 210px;
+            img {
+                margin-left: 10px;
+            }
+        }
+    }
+    &__title {
+        color: #18191F;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 54px;
+        margin-bottom: 38px;
+    }
+    &__subtitle {
+        color: #18191F;
+        line-height: 30px;
+        margin-bottom: 50px;
+        font-weight: 500;
+        font-size: 20px;
+        max-width: 425px;
+    }
+    &__discr {
+        margin-bottom: 0;
+    }
+    &__wrapper-img {
+        position: relative;
+        width: 100%; 
+    }
+    &__background {
+        position: absolute;
+        background: linear-gradient(305.5deg, rgba(74, 93, 234, 0.75) 14.86%, rgba(186, 74, 255, 0.75) 84.57%);
+        bottom: 0;
+        right: 0;
+        height: 570px;
+        width: 610px;
+        border-radius: 100%;
+        filter: blur(100px);
+        opacity: .65;
+    }
+    &__img {
+        position: absolute;
+        z-index: 1;
+        &:nth-child(1){
+            bottom: 0;
+            left: 0;
+            width: 635px;
+            height: 495px;
+        }
+        &:nth-child(2){
+            bottom: 50px;
+            right: -70px;
+        }
+        &:nth-child(3){
+            bottom: 278px;
+            left: -110px;   
+            z-index: 2;
+        }
+        &:nth-child(4){
+            bottom: 200px;
+            left: 540px;
+        }
+        &:nth-child(5){
+            bottom: 444px;
+            left: 20px;
+        }
+        &:nth-child(6){
+            bottom: 350px;
+            left: 557px;
+        }
+        &:nth-child(7){
+            bottom: 450px;
+            left: 430px;
+            width: 75px;
+            height: 75px;
+        }
+        &:nth-child(8){
+            bottom: 98px;
+            left: 53px;
+            width: 55px;
+            height: 55px;
+        }
+    }
+   
+}
+
+
+
+@media(max-width:998px){
+    .hero {
+        &__wrapper-img  {
+            display: none;
+        }
+    }
+}
+
+@media(max-width:550px) {
+    .hero {
+        &__wrapper-text {
+            padding-right: 10px;
+        }
+        &__title {
+            font-weight: 800;
+            font-size: 28px;
+            margin-bottom: 30px;
+            
+        }
+        &__subtitle {
+            font-size: 18px;
+            
+        }
+       
+    }
+}

@@ -1,0 +1,75 @@
+.footer {
+    background: #F1F3F6;
+    color: rgba(28, 37, 43, 1);
+
+    .container {
+        padding: 61px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__col {
+        margin-right: 140px;
+    }
+
+    &__logo {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 32px;
+        position: relative;
+
+        img {
+            position: absolute;
+            display: block;
+            bottom: 90%;
+            left: 105px;
+        }
+    }
+
+    &__description {
+        display: block;
+        color: rgba(161, 168, 173, 1);
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 200;
+        font-feature-settings: 'salt'on, 'liga'off;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 32px;
+        line-height: 30px;
+    }
+
+    &__item {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+}
+
+@media(max-width: 985px) {
+    .footer { 
+        .container {
+            flex-direction: column;
+            padding-bottom: 0;
+            div {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 720px) {
+    .footer {
+        &__col {
+            margin-right: 70px;
+        }
+    }
+}

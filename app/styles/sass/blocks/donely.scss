@@ -1,0 +1,139 @@
+.donely {
+    padding: 64px 0;
+
+
+    &__title {
+        text-align: center;
+        margin-bottom: 87px;
+        padding: 0 15px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.donelyCard {
+    display: flex;
+    padding: 0 10px 100px;
+    width: 100%;
+
+    &__title {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    &__box {
+        width: 50%;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__background-1 {
+        margin: 0 auto;
+        height: 410px;
+        width: 410px;
+        background: rgba(155, 77, 255, 0.26);
+        border-radius: 100%;
+        filter: blur(150px);
+    }
+    &__background-2 {
+        margin: 0 auto;
+        height: 361px;
+        width: 361px;
+        background:rgba(236, 57, 68, 0.18);;
+        border-radius: 100%;
+        filter: blur(150px);
+    }
+    &__background-3 {
+        margin: 0 auto;
+        height: 410px;
+        width: 410px;
+        background:  rgba(35, 202, 142, 0.18);;
+        border-radius: 100%;
+        filter: blur(150px);
+    }
+
+    img {
+        position: absolute;
+    }
+
+    &__img-1 {
+        top: 54px;
+        left: 182px;
+        z-index: 2;
+    }
+    &__img-2 {
+        top: 80px;
+        left: 315px;
+        z-index: 1;
+    }
+    &__img-3 {
+        top: 83px;
+        left: 33px;
+        z-index: 3;
+    }
+
+}
+
+@media(max-width: 890px) {
+    .donely {
+        &__wrapper {}
+    }
+
+    .donelyCard {
+        flex-direction: column;
+        align-items: center;
+        &.columnReverse {
+            flex-direction: column-reverse;
+        }
+        &__box {
+            width: 70%;
+        }
+        &__background-1,
+        &__background-2,
+        &__background-3 {
+            width: 300px;
+            height: 300px;
+        }
+        &__img-4 {
+            width: 300px;
+        }
+        &__img-1 {
+            top: -50px;
+            left: 149px;
+            z-index: 2;
+        }
+        &__img-2 {
+            top: -20px;
+            left: 282px;
+            z-index: 1;
+        }
+        &__img-3 {
+            top: -23px;
+            left: 0px;
+            z-index: 3;
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .donelyCard {
+        &__box {
+            width: 90%;
+        }
+    }
+}

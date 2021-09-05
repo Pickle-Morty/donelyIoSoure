@@ -1,0 +1,109 @@
+.developers {
+
+    padding: 64px 20px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 76px;
+    }
+
+    &__wrapper {
+        margin-bottom: 58px;
+       
+    }
+    .btn__purple {
+        margin: 0 auto;
+    }
+
+}
+
+.owl-stage {
+    display: flex!important;
+}
+
+.owl-nav  {
+    display: none!important;
+}
+
+.developerCard {
+    width: 255px;
+    box-shadow: 0px 12px 32px rgba(28, 44, 64, 0.2);
+    border-radius: 8px;
+    margin: 0 auto;
+
+    &__wrapper-img {
+        
+        position: relative;
+        
+        background: transparent;
+    }
+    &__background {
+        height: 163px;
+        width: 100%;
+        background: rgba(232, 235, 243, 1);
+        border-radius: 8px 8px 0px 0px;
+    }
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+    }
+    &__img-2 {
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__wrapper-content {
+        padding: 5px 17px;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+    } 
+    &__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0;
+    }
+    &__description {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgba(161, 168, 173, 1);
+    }
+    &__available {
+        font-size: 11px;
+        line-height: 24px;
+        color: rgba(75, 139, 54, 1);
+        padding: 2px 8px;
+        background: #CEFDC3;
+        border-radius: 18px;
+
+    }
+    &__profession {
+        font-size: 12px;
+        font-weight: 500;
+        margin: 10px 0 17px;
+        img {
+            margin-right: 4px;
+        }
+    }
+    &__wrapper-price {
+        background: #F1F3F6;
+        padding: 8px 17px;
+    }
+    &__price {
+        color: rgba(75, 94, 235, 1);
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    &__buisness {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

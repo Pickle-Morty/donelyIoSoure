@@ -1,0 +1,58 @@
+.partner {
+    background: #F1F3F6;
+    position: relative;
+
+
+
+    .container-xxl {
+        max-width: 1240px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__item {
+        position: absolute;
+        display: block;
+        color: rgba(161, 168, 173, 1);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        bottom: 30px;
+        right: 20px;
+    }
+
+    &__wrapper {
+        overflow: hidden;
+        width: calc(100% - 132px);
+    }
+
+    &__row {
+        width: max-content;
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__text {
+        display: block;
+        color: rgba(161, 168, 173, 1);
+        margin-right: 10px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__img {
+        display: block;
+        height: min-content;
+        width: min-content;
+        margin: 0 29px;
+    }
+
+}

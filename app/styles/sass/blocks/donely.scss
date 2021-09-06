@@ -50,19 +50,23 @@
         border-radius: 100%;
         filter: blur(150px);
     }
+
     &__background-2 {
         margin: 0 auto;
         height: 361px;
         width: 361px;
-        background:rgba(236, 57, 68, 0.18);;
+        background: rgba(236, 57, 68, 0.18);
+        ;
         border-radius: 100%;
         filter: blur(150px);
     }
+
     &__background-3 {
         margin: 0 auto;
         height: 410px;
         width: 410px;
-        background:  rgba(35, 202, 142, 0.18);;
+        background: rgba(35, 202, 142, 0.18);
+        ;
         border-radius: 100%;
         filter: blur(150px);
     }
@@ -76,11 +80,13 @@
         left: 182px;
         z-index: 2;
     }
+
     &__img-2 {
         top: 80px;
         left: 315px;
         z-index: 1;
     }
+
     &__img-3 {
         top: 83px;
         left: 33px;
@@ -97,43 +103,77 @@
     .donelyCard {
         flex-direction: column;
         align-items: center;
+
         &.columnReverse {
             flex-direction: column-reverse;
         }
+
         &__box {
             width: 70%;
         }
+
         &__background-1,
         &__background-2,
         &__background-3 {
             width: 300px;
             height: 300px;
         }
+
         &__img-4 {
-            width: 300px;
+            width: 370px;
+            left: -28px;
         }
+
         &__img-1 {
             top: -50px;
-            left: 149px;
+            left: 90px;
             z-index: 2;
         }
+
         &__img-2 {
             top: -20px;
-            left: 282px;
+            left: 245px;
             z-index: 1;
         }
+
         &__img-3 {
-            top: -23px;
-            left: 0px;
+            top: 20px;
+            left: -8px;
             z-index: 3;
+        }
+    }
+}
+
+@media(max-width: 790px) {
+    .donely {
+        &__title {
+            font-size: 36px;
         }
     }
 }
 
 @media(max-width: 550px) {
     .donelyCard {
+        text-align: center;
         &__box {
             width: 90%;
+        }
+
+        &__img-1 {
+            top: -50px;
+            left: -25px;
+            z-index: 2;
+        }
+
+        &__img-2 {
+            top: -20px;
+            left: 75px;
+            z-index: 1;
+        }
+
+        &__img-3 {
+            display: none;
+            
         }
     }
 }

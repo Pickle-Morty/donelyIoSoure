@@ -56,3 +56,21 @@
     }
 
 }
+
+@media(max-width:550px) {
+    .partner {
+        .container-xxl {
+            height: 100px;
+        }
+        &__text {
+            font-size: 18px;
+            margin-left: 5px;
+        }
+        &__item {
+            font-size: 18px;
+        }
+        &__img {
+            margin: 0 25px 0 5px;
+        }
+    }
+}

@@ -68,14 +68,14 @@
             flex-direction: column;
             height: 100vh;
             background: white;
-            width: 100%;
+            width: calc(100% + 40px);
             right: -700px;
             transition: .7s;
             padding: 70px 0 0 20px  ;
             
         }
         &__navbar.active {
-            right: 0px;
+            right: -20px;
 
         }
         &__navbar ul{

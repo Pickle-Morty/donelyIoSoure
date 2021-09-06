@@ -105,6 +105,7 @@
 
 @media(max-width:550px) {
     .hero {
+        height: calc(100vh - 100px);
         &__wrapper-text {
             padding-right: 10px;
         }
@@ -112,6 +113,7 @@
             font-weight: 800;
             font-size: 28px;
             margin-bottom: 30px;
+            margin-top: 100px;
             
         }
         &__subtitle {

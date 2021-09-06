@@ -1,49 +1,72 @@
 .find {
     padding-top: 44px;
+
     &__title {
         text-align: center;
         margin-bottom: 48px;
     }
-    &__wrapper {
-        display: flex;
 
+    &__wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'a a b e''c d d e';
+        grid-gap: 30px;
     }
-    &__box-m {
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-    }
+
     &__box-l {
         width: 30%;
-        padding-bottom: 27px;
     }
+
     &__row {
         display: flex;
         margin-bottom: 27px;
     }
-    &__item-m {
-        height: 230px;
+
+    &__item-m1 {
+        height: 231px;
         position: relative;
         overflow: hidden;
-        width: 66%;
+        width: 100%;
         border-radius: 8px;
-        margin: 0 15px;
+        grid-area: a;
     }
-    &__item-l {
+
+    &__item-m2 {
+        height: 231px;
         position: relative;
         overflow: hidden;
-        width: 34%;
+        width: 100%;
         border-radius: 8px;
-        margin: 0 15px;
+        grid-area: d;
     }
+
+    &__item-l1 {
+        height: 231px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 8px;
+
+        grid-area: b;
+    }
+
+    &__item-l2 {
+        height: 231px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 8px;
+        grid-area: c;
+    }
+
     &__item-xl {
-        height: 489px;
         width: 100%;
         position: relative;
         overflow: hidden;
         border-radius: 8px;
-        margin: 0 15px;
+        grid-area: e;
     }
+
     &__subtitle {
         position: absolute;
         left: 24px;
@@ -52,7 +75,7 @@
         font-weight: 600;
         font-size: 24px;
     }
-  
+
     &__price {
         position: absolute;
         right: 18px;
@@ -60,42 +83,128 @@
         font-weight: 600;
         font-size: 17px;
     }
+
     &__content {
         position: relative;
     }
+
     &__img-1 {
         position: absolute;
         z-index: 0;
     }
+
     &__img-2 {
         position: absolute;
         z-index: 0;
         bottom: 0;
         right: 29px;
     }
+
     &__img-3 {
         position: absolute;
         z-index: 0;
         bottom: 115px;
         right: 0;
     }
+
+    &__icons-bottom {
+        position: absolute;
+        z-index: 2;
+        bottom: 14px;
+        right: 20px;
+
+        img {
+            margin-left: -21px;
+        }
+    }
+
+    &__icons-top {
+        position: absolute;
+        z-index: 2;
+        top: 14px;
+        left: 30px;
+
+        img {
+            margin-left: -24px;
+        }
+    }
+
     .btn__purple {
         margin: 20px auto 0;
+        width: 174px;
+
+        img {
+            margin-left: 16px;
+        }
     }
 }
+
 @media(max-width: 985px) {
     .find {
-        &__wrapper {
-            flex-direction: column;
-        }
-        &__box-m {
-            width: 100%;
-        }
-        &__box-l {
-           display: none;
-        }
         &__item-xl {
-            margin: 0 ;
+            display: none;
+        }
+
+        &__wrapper {
+            grid-template-areas: 'a a b''c d d';
+        }
+
+    }
+}
+
+@media(max-width: 790px) {
+    .find {
+        &__wrapper {
+            grid-template-areas: 'a a'' b c''d d';
+        }
+
+        &__title {
+            font-size: 36px;
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .find {
+        &__wrapper {
+            grid-gap: 15px;
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+        &__subtitle {
+            left: 10px;
+            font-size: 18px;
+            box-shadow: 0px 12px 10px rgba(80, 90, 103, 0.2);
+        }
+        &__icons-bottom {
+            &.icons-1 {
+                position: absolute;
+                bottom: 179px;
+                left: 30px!important;
+            }
+
+            &.icons-2 {
+                bottom: 107px;
+                right: 51px;
+
+                img {
+                    margin: -34px;
+                }
+            }
+
+
+        }
+
+        &__icons-top {
+            &.icons-3 {
+                left: 125px;
+                top: 95px;
+                img {
+                    margin: -33px;
+                }
+            }
         }
     }
 }

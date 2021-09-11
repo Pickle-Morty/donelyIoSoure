@@ -25,8 +25,15 @@
     }
     &__item {
         margin: 0 17px;
+        a {
+            &:hover {
+                font-weight: 900;
+                color: black;
+            }
+        }
     }
     &__logo {
+        font-family: 'Poppins', sans-serif;
         margin-right: 32px;
         font-size: 30px;
         font-weight: 600;

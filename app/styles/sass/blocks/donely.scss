@@ -75,38 +75,61 @@
         position: absolute;
     }
 
+    &__social-1 {
+        position: absolute;
+    }
+
     &__img-1 {
-        top: 54px;
+        height: 302px;
         left: 182px;
+        top: 54px;
+        width: 248px;
         z-index: 2;
+
     }
 
     &__img-2 {
-        top: 80px;
+        height: 250px;
         left: 315px;
+        top: 80px;
+        width: 205px;
         z-index: 1;
     }
 
     &__img-3 {
-        top: 83px;
+        height: 153px;
         left: 33px;
+        top: 83px;
+        width: 195px;
         z-index: 3;
+    }
+    &__img-4 {
+        background: transparent;
+        left: 33px;
+        width: 368px;
+    }
+    &__img-5 {
+        left: 33px;
+        width: 484px;
     }
 
 }
 
 @media(max-width: 890px) {
     .donely {
-        &__wrapper {}
+        &__title {
+            margin-bottom: 110px;
+        }
     }
 
     .donelyCard {
         flex-direction: column;
         align-items: center;
-
+        margin-bottom: 45px;
         &.columnReverse {
             flex-direction: column-reverse;
         }
+        
 
         &__box {
             width: 70%;
@@ -120,8 +143,14 @@
         }
 
         &__img-4 {
+            left: 25px;
+            top: -50px;
             width: 370px;
-            left: -28px;
+        }
+        &__img-5 {
+            left: 25px;
+            top: -50px;
+            width: 370px;
         }
 
         &__img-1 {
@@ -155,6 +184,7 @@
 @media(max-width: 550px) {
     .donelyCard {
         text-align: center;
+
         &__box {
             width: 90%;
         }
@@ -173,7 +203,17 @@
 
         &__img-3 {
             display: none;
-            
+
+        }
+        &__img-4 {
+            left: 5px;
+            top: 0;
+            width: 300px;
+        }
+        &__img-5 {
+            left: 5px;
+            top: 0;
+            width: 300px;
         }
     }
 }

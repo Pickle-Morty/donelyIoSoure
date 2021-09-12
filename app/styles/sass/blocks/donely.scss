@@ -106,10 +106,10 @@
     &__img-4 {
         background: transparent;
         left: 33px;
-        width: 368px;
+        width: 420px;
     }
     &__img-5 {
-        left: 33px;
+        left: 47px;
         width: 484px;
     }
 
@@ -145,10 +145,10 @@
         &__img-4 {
             left: 25px;
             top: -50px;
-            width: 370px;
+            
         }
         &__img-5 {
-            left: 25px;
+            left: 47px;
             top: -50px;
             width: 370px;
         }
@@ -177,27 +177,55 @@
     .donely {
         &__title {
             font-size: 36px;
+            line-height: 40px;
         }
+    }
+    .donelyCard {
+        &__title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 0 15px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    
     }
 }
 
 @media(max-width: 550px) {
+    .donely {
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
     .donelyCard {
         text-align: center;
-
+        &__title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 0 15px;
+            font-size: 26px;
+            line-height: 34px;
+        }
         &__box {
             width: 90%;
         }
 
         &__img-1 {
             top: -50px;
-            left: -25px;
+            left: 0px;
             z-index: 2;
         }
 
         &__img-2 {
             top: -20px;
-            left: 75px;
+            left: 85px;
             z-index: 1;
         }
 
@@ -208,12 +236,44 @@
         &__img-4 {
             left: 5px;
             top: 0;
-            width: 300px;
+            width: 350px;
         }
         &__img-5 {
             left: 5px;
             top: 0;
-            width: 300px;
+            width: 315px;
+        }
+    }
+}
+
+@media(max-width: 390px) {
+    .donelyCard {
+       
+        &__img-1 {
+            top: -50px;
+            left: 0px;
+            z-index: 2;
+        }
+
+        &__img-2 {
+            top: -20px;
+            left: 85px;
+            z-index: 1;
+        }
+
+        &__img-3 {
+            display: none;
+
+        }
+        &__img-4 {
+            left: 0px;
+            top: 0;
+            width: 320px;
+        }
+        &__img-5 {
+            left: -10px;
+            top: 0;
+            width: 310px;
         }
     }
 }

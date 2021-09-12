@@ -31,8 +31,9 @@
 
 @media(max-width:790px) {
     .start {
-        &__title{
+        &__title {
             font-size: 36px;
+            line-height: 44px;
         }
         &__wrapper {
             flex-direction: column;
@@ -42,10 +43,24 @@
     .startCard {
         margin-bottom: 40px;
         &__title{
-           
-            font-size: 28px;
+            font-size: 26px;
             
         }
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
        
+    }
+}
+
+@media(max-width:790px) {
+    .start {
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        
     }
 }

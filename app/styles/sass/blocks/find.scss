@@ -130,7 +130,7 @@
     }
 
     .btn__purple {
-        margin: 20px auto 0;
+        margin: 80px auto 0;
         width: 174px;
 
         img {
@@ -143,7 +143,7 @@
     .find {
         &__item-xl {
             display: none;
-        }
+        }       
 
         &__wrapper {
             grid-template-areas: 'a a b''c d d';
@@ -160,6 +160,7 @@
 
         &__title {
             font-size: 36px;
+            line-height: 40px;
         }
     }
 }
@@ -171,23 +172,27 @@
         }
 
         &__title {
-            font-size: 28px;
+            font-size: 32px;
         }
+
         &__subtitle {
             left: 10px;
             font-size: 18px;
-            box-shadow: 0px 12px 10px rgba(80, 90, 103, 0.2);
+
         }
+
         &__icons-bottom {
             &.icons-1 {
                 position: absolute;
                 bottom: 179px;
-                left: 30px!important;
+                left: 30px !important;
             }
 
             &.icons-2 {
-                bottom: 107px;
-                right: 51px;
+
+                bottom: 55px;
+                right: 100px;
+
 
                 img {
                     margin: -34px;
@@ -199,8 +204,41 @@
 
         &__icons-top {
             &.icons-3 {
-                left: 125px;
-                top: 95px;
+                left: 70px;
+                top: 150px;
+
+                img {
+                    margin: -33px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .find {
+        &__icons-bottom {
+            &.icons-1 {
+                position: absolute;
+                bottom: 179px;
+                left: 30px !important;
+            }
+
+            &.icons-2 {
+                bottom: 55px;
+                right: 100px;
+                img {
+                    margin: -34px;
+                }
+            }
+        }
+
+        &__icons-top {
+            &.icons-3 {
+                left: 145px;
+                top: 153px;
+            
+
                 img {
                     margin: -33px;
                 }

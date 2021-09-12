@@ -18,7 +18,7 @@
         background: transparent;
         border-radius: 22px;
         background: linear-gradient(90.56deg, #4A5DEA 0.46%, #914AFF 99.54%);
-        border: 2px solid #914AFF;
+
         color: linear-gradient(90.51deg, #4A5DEA 0.42%, #914AFF 114.36%);
         font-size: 16px;
         display: block;
@@ -26,6 +26,7 @@
         transition: .5s;
 
         &:hover {
+            border: 2px solid #914AFF;
             transition: .5s;
             color: #914AFF;
             animation: btnFull__animation;

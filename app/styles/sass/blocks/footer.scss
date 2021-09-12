@@ -22,6 +22,7 @@
         line-height: 20px;
         margin-bottom: 32px;
         position: relative;
+        font-family: 'Poppins', sans-serif;
 
         img {
             position: absolute;
@@ -43,7 +44,7 @@
     &__subtitle {
         font-size: 20px;
         font-weight: 500;
-        margin-bottom: 32px;
+        margin-bottom: 10px;
         line-height: 30px;
     }
 
@@ -51,6 +52,11 @@
         font-size: 16px;
         line-height: 26px;
         margin-bottom: 12px;
+    }
+    .btn__white {
+        width: 97px;
+        height: 40px;
+        padding: 10px 20px;
     }
 }
 

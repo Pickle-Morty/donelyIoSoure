@@ -8,6 +8,54 @@
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
+$(document).ready(function () {
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+	  margin: 10,
+	  dots: false,
+	  loop: false,
+	  nav: false,
+	  responsive: {
+		0: {
+			items: 1	
+		},
+		600: {
+		  items: 2
+		},
+		800: {
+		  items: 3
+		},
+		1000: {
+		  items: 4
+		}
+	  }
+	})
+  })
+
+$(document).ready(function () {
+	var owl = $('.partner-carousel');
+	owl.owlCarousel({
+	  margin: 10,
+	  dots: false,
+	  loop: false,
+	  nav: false,
+	  responsive: {
+		0: {
+			items: 3	
+		},
+		550: {
+			items: 4
+		},
+
+		800: {
+		  items: 3
+		},
+		
+		
+	  }
+	})
+  })
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -33,30 +81,6 @@ const animationScroll = () => {
 	}
 }
 window.addEventListener('scroll', animationScroll)
-
-$(document).ready(function () {
-	var owl = $('.owl-carousel');
-	owl.owlCarousel({
-	  margin: 10,
-	  dots: false,
-	  loop: false,
-	  nav: false,
-	  responsive: {
-		0: {
-			items: 1	
-		},
-		600: {
-		  items: 2
-		},
-		800: {
-		  items: 3
-		},
-		1000: {
-		  items: 4
-		}
-	  }
-	})
-  })
 
 
 
